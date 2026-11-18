@@ -16,7 +16,7 @@ BANDCAMP_ALBUM_URL = "https://thevegascocks.bandcamp.com/album/the-vegas-cocks"
 BANDCAMP_EMBED = ("https://bandcamp.com/EmbeddedPlayer/album=2762444965/size=large/"
                   "bgcol=000000/linkcol=c9507f/tracklist=true/artwork=small/transparent=true/")
 LANDR_URL = "https://artists.landr.com/vegascocks"
-SHOP_URL = ""  # Fourthwall shop host, set when the shop exists
+SHOP_URL = "https://the-vegas-cocks-shop.fourthwall.com"
 
 STREAMING = [
     ("Spotify", "https://open.spotify.com/album/3jVNJiE29sZQa6CxbyOgcb"),
