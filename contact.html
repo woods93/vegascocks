@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact – The Vegas Cocks</title>
+<meta name="description" content="Contact The Vegas Cocks for booking and press.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="top">
+  <a class="logo" href="index.html"><img src="img/the-vegas-cocks-1.png" alt="The Vegas Cocks" width="160" height="160"></a>
+  <nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="music.html">Music</a></li><li><a href="about.html">About</a></li><li><a href="shop.html">Shop</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav>
+</header>
+<main id="content">
+
+<article class="prose">
+  <h1>Contact</h1>
+  <p>Booking, press, or just want to say something? Send a message.</p>
+  <form id="contact-form" class="form" action="https://api.web3forms.com/submit" method="POST" data-key="">
+    <input type="hidden" name="access_key" value="">
+    <input type="hidden" name="subject" value="New message from The Vegas Cocks website">
+    <input type="hidden" name="from_name" value="The Vegas Cocks website">
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <label>Your name (required)<input name="name" required autocomplete="name"></label>
+    <label>Your email (required)<input type="email" name="email" required autocomplete="email"></label>
+    <label>Subject<input name="subject_line"></label>
+    <label>Your message<textarea name="message" rows="6" required></textarea></label>
+    <button class="btn" type="submit">Send</button>
+    <p class="form-status" role="status" aria-live="polite"></p>
+  </form>
+</article>
+
+</main>
+<footer class="foot">
+  <p>&copy; The Vegas Cocks</p>
+</footer>
+<script src="js/site.js"></script>
+</body>
+</html>
