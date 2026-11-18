@@ -10,7 +10,7 @@ import html
 
 # Contact form: Web3Forms access key (public by design). Leave "" until the key exists;
 # the form then tells visitors the form is not switched on yet.
-WEB3FORMS_KEY = ""
+WEB3FORMS_KEY = "5cd63943-8ab8-4f3e-ad61-9cfc33a5001a"
 
 BANDCAMP_ALBUM_URL = "https://thevegascocks.bandcamp.com/album/the-vegas-cocks"
 BANDCAMP_EMBED = ("https://bandcamp.com/EmbeddedPlayer/album=2762444965/size=large/"
