@@ -1,0 +1,44 @@
+[
+  {
+    "id": "niok",
+    "name": "The Nashville I Once Knew",
+    "url": "https://woods93.github.io/niok/",
+    "image": "https://yt3.googleusercontent.com/Jtw1y0iBRC5QylOyydC-MrKEry-a9yKyZxMT-O71DsmyoTzSlqjVf0OYmpDivaOnBOdh758Baw=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+    "blurb": "Laurie Webb's podcast about Nashville's rock scene of the 1980s and early 1990s, with news, live shows, and host picks."
+  },
+  {
+    "id": "media-pig-af",
+    "name": "Media Pig AF",
+    "url": "https://www.mediapigaf.com/",
+    "image": "https://woods93.github.io/mediapigaf/img/logo.png",
+    "blurb": "An independent Nashville music company: music production, artist development, and sync licensing."
+  },
+  {
+    "id": "mickey-cash",
+    "name": "Mickey Cash",
+    "url": "https://mickeycash.com/",
+    "image": "https://mickeycash.com/assets/images/victory-cover.jpg",
+    "blurb": "Americana and alt-country singer-songwriter. Her debut album, Victory, came out in 2013. Videos, music, and booking."
+  },
+  {
+    "id": "lollievox",
+    "name": "LollieVox",
+    "url": "https://woods93.github.io/lollievox/",
+    "image": "https://woods93.github.io/lollievox/img/Lollievox-cover-web.jpg",
+    "blurb": "The official site for Laurie Webb of LollieVox, singer/songwriter known for her hits from FL Studio Demo Songs."
+  },
+  {
+    "id": "k-butler-guitars",
+    "name": "K. Butler Guitars",
+    "url": "https://woods93.github.io/kbutlerguitars/",
+    "image": "https://woods93.github.io/kbutlerguitars/img/k-butler-guitars-01.jpg",
+    "blurb": "Custom electric guitars and basses, handmade in Tennessee by a luthier with over three decades of experience."
+  },
+  {
+    "id": "vegas-cocks",
+    "name": "The Vegas Cocks",
+    "url": "https://woods93.github.io/vegascocks/",
+    "image": "https://woods93.github.io/vegascocks/img/livej.jpg",
+    "blurb": "Music, photos, and merch from The Vegas Cocks."
+  }
+]

@@ -7,6 +7,7 @@ Build The Vegas Cocks static site.
 Edit the text here, rebuild, commit, push. GitHub Pages serves the result.
 """
 import html
+import os
 
 # Contact form: Web3Forms access key (public by design). Leave "" until the key exists;
 # the form then tells visitors the form is not switched on yet.
@@ -41,7 +42,7 @@ def esc(s):
 
 
 NAV = [("index.html", "Home"), ("music.html", "Music"), ("about.html", "About"),
-       ("shop.html", "Shop"), ("contact.html", "Contact")]
+       ("shop.html", "Shop"), ("family.html", "Family"), ("contact.html", "Contact")]
 
 
 def page(filename, title, description, body):
@@ -57,7 +58,7 @@ def page(filename, title, description, body):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=fam1">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
@@ -197,12 +198,38 @@ def build_contact():
 """
 
 
+SITE_ID = "vegas-cocks"
+
+
+def build_family():
+    """Family page: cards for the other family sites, read from family.json."""
+    import json
+    here = os.path.dirname(os.path.abspath(__file__))
+    with open(os.path.join(here, "family.json"), encoding="utf-8") as fh:
+        data = json.load(fh)
+    cards = []
+    for f in data:
+        if f["id"] == SITE_ID:
+            continue
+        pic = ('<a class="fam-pic" href="%s" rel="noopener"><img src="%s" alt="%s" loading="lazy" '
+               'referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></a>'
+               % (esc(f["url"]), esc(f["image"]), esc(f["name"]))) if f.get("image") else ""
+        cards.append('<article class="fam-card">%s<h3><a href="%s" rel="noopener">%s</a></h3><p>%s</p></article>'
+                     % (pic, esc(f["url"]), esc(f["name"]), esc(f.get("blurb", ""))))
+    return '''<article class="prose">
+  <h1>Family</h1>
+  <p class="lede">The artists and makers we have built websites for.</p>
+  <div class="fam-grid">%s</div>
+</article>''' % "".join(cards)
+
+
 PAGES = [
     ("index.html", "The Vegas Cocks – Uncured high octane gutter-snipe rock and roll",
      "The Vegas Cocks: street-smart, mid-90s rock & roll from Nashville, Tennessee. Listen to the album.", build_home),
     ("music.html", "Music – The Vegas Cocks", "Listen to The Vegas Cocks: 9 tracks on Bandcamp and every major streaming service.", build_music),
     ("about.html", "About – The Vegas Cocks", "About The Vegas Cocks, a street-smart mid-90s rock & roll band from Nashville, Tennessee.", build_about),
     ("shop.html", "Shop – The Vegas Cocks", "The Vegas Cocks merch: shirts and gear, coming soon.", build_shop),
+    ("family.html", "Family – The Vegas Cocks", "The artists and makers in The Vegas Cocks family of websites.", build_family),
     ("contact.html", "Contact – The Vegas Cocks", "Contact The Vegas Cocks for booking and press.", build_contact),
 ]
 
