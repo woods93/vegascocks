@@ -58,12 +58,12 @@ def page(filename, title, description, body):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=fam1">
+<link rel="stylesheet" href="css/style.css?v=logo1">
 </head>
 <body>
 <a class="skip" href="#content">Skip to content</a>
 <header class="top">
-  <a class="logo" href="index.html"><img src="img/the-vegas-cocks-1.png" alt="The Vegas Cocks" width="160" height="160"></a>
+  <a class="logo" href="index.html"><img src="img/vegascocks-logo-horizontal-white.png" alt="The Vegas Cocks" width="3628" height="338"></a>
   <nav aria-label="Main"><ul>{items}</ul></nav>
 </header>
 <main id="content">
