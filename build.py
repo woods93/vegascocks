@@ -218,7 +218,7 @@ def build_family():
                      % (pic, esc(f["url"]), esc(f["name"]), esc(f.get("blurb", ""))))
     return '''<article class="prose">
   <h1>Family</h1>
-  <p class="lede">The artists and makers we have built websites for.</p>
+  <p class="lede">Artists, makers, poets, and saints.</p>
   <div class="fam-grid">%s</div>
 </article>''' % "".join(cards)
 
