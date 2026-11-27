@@ -15,7 +15,7 @@ WEB3FORMS_KEY = "5cd63943-8ab8-4f3e-ad61-9cfc33a5001a"
 
 BANDCAMP_ALBUM_URL = "https://thevegascocks.bandcamp.com/album/the-vegas-cocks"
 BANDCAMP_EMBED = ("https://bandcamp.com/EmbeddedPlayer/album=2762444965/size=large/"
-                  "bgcol=000000/linkcol=c9507f/tracklist=true/artwork=small/transparent=true/")
+                  "bgcol=000000/linkcol=70d63b/tracklist=true/artwork=small/transparent=true/")
 LANDR_URL = "https://artists.landr.com/vegascocks"
 SHOP_URL = "https://the-vegas-cocks-shop.fourthwall.com"
 
@@ -155,18 +155,18 @@ def build_about():
 
 def build_shop():
     if SHOP_URL:
-        card = f"""<a class="product" href="{SHOP_URL}/products/the-vegas-cocks-logo-tee">
-      <img src="img/vegascocks-tee-front.jpg" alt="The Vegas Cocks Logo Tee" loading="lazy">
-      <span class="product-name">The Vegas Cocks Logo Tee</span>
+        card = f"""<a class="product" href="{SHOP_URL}/products/the-vegas-cocks-tee-reissued-vintage">
+      <img src="img/vegascocks-tee-reissue.jpg" alt="The Vegas Cocks Reissued Vintage Tee" loading="lazy">
+      <span class="product-name">The Vegas Cocks Tee: Reissued Vintage</span>
       <span class="product-price">$30</span>
-      <span class="product-note">Preview: the store link goes live at launch</span>
+      <span class="product-note">Black, heavyweight. Printed on demand.</span>
     </a>"""
     else:
         card = '<div class="ph" aria-hidden="true">T-shirt<br><small>coming soon</small></div>'
     return f"""
 <article class="prose">
   <h1>Shop</h1>
-  <p>Merch is on its way: shirts and other gear, printed and shipped on demand. Check back soon, or <a href="contact.html">send a note</a> and we&rsquo;ll tell you when it opens.</p>
+  <p>The original Vegas Cocks tee is back in print. Shirts and other gear, printed and shipped on demand.</p>
   <div class="products">
     {card}
     <div class="ph" aria-hidden="true">Hoodie<br><small>coming soon</small></div>
